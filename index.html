@@ -11,13 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -437,48 +437,49 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="btn-close-modal" data-modal-close>
-          <svg class="icon-logo-modal">
+      <div class="backdrop__modal">
+        <button type="button" class="backdrop__button" data-modal-close>
+          <svg class="backdrop__icon">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+
         <form class="form">
-          <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-          <div class="form-field">
+          <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="form__field">
             <label for="name">Ім'я</label>
             <input class="text" name="name" id="name" />
-            <svg class="form-icon">
+            <svg class="form__icon">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
-          <div class="form-field">
+          <div class="form__field">
             <label for="tel">Телефон</label>
             <input class="text" name="tel" id="tel" />
-            <svg class="form-icon">
+            <svg class="form__icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
-          <div class="form-field">
+          <div class="form__field">
             <label for="email">Пошта</label>
             <input class="email" name="tel" id="email" autocomplete="off" />
-            <svg class="form-icon">
+            <svg class="form__icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <div class="form-textarea">
+          <div class="form__textarea">
             <label for="comment">Коментар</label>
             <textarea name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
           </div>
 
-          <label class="checkbox-label">
-            <input type="checkbox" name="adoption" value="adoption" class="checkbox" />
-            <span class="icon"></span>
-            <span class="checkbox-text">Погоджуюся з розсилкою та приймаю</span>
-            <a href="" class="checkbox-link">Умови договору</a>
+          <label class="form__label">
+            <input type="checkbox" name="adoption" value="adoption" class="form__checkbox" />
+            <span class="form__element"></span>
+            <span class="form__text">Погоджуюся з розсилкою та приймаю</span>
+            <a href="" class="form__link">Умови договору</a>
           </label>
 
-          <button class="forma-btn" type="submit">Відправити</button>
+          <button class="button forma__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>

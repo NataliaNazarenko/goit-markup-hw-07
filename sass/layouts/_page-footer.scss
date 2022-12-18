@@ -1,0 +1,120 @@
+/* PAGE-FOOTER */
+
+.page-footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #2f303a;
+}
+
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-footer__wrap {
+  margin-right: 70px;
+}
+
+.page-footer__address {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__text {
+  margin-top: 0;
+  margin-bottom: 9px;
+  color: $text-white;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.page-footer__link {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.page-footer__grid {
+  margin-right: 93px;
+}
+
+.page-footer__title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-white;
+  margin-bottom: 20px;
+}
+
+.page-footer__socials {
+  color: $text-white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-footer__field {
+  display: flex;
+}
+
+.page-footer__input {
+  min-width: 358px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 16px;
+  background-color: inherit;
+  color: $text-white;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border-color: $text-white;
+    outline: none;
+  }
+}
+
+.page-footer__button {
+  padding: 10px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.page-footer__icon {
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}

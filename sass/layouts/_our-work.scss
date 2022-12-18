@@ -1,0 +1,48 @@
+/* OUR-WORK */
+
+.our-work {
+  padding-bottom: 94px;
+}
+
+.our-work__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  min-width: 366px;
+
+  color: $primari-text-color;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery__item {
+  margin: 0;
+  width: 370px;
+  height: 294px;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.gallery__label {
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  position: absolute;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-white;
+}
