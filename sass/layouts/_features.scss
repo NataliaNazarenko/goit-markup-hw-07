@@ -6,9 +6,7 @@
 }
 
 .features__wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-align-justify;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;

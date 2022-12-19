@@ -3,8 +3,7 @@
 .page-footer {
   padding-bottom: 60px;
   padding-top: 60px;
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   background-color: #2f303a;
 }
 
@@ -112,8 +111,6 @@
 }
 
 .page-footer__icon {
-  align-items: center;
-  justify-content: center;
   margin-left: 10px;
   width: 24px;
   height: 24px;

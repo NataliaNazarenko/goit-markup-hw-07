@@ -46,9 +46,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #000000;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-align-justify;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -75,18 +73,18 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-}
 
-.form__textarea textarea::placeholder {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+  & textarea::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-.form__textarea textarea:focus {
-  border-color: #2196f3;
-  outline: none;
+  & textarea:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
 }
 
 .form {
@@ -120,14 +118,14 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form__field input:focus {
-  border-color: #2196f3;
-}
+  &:focus {
+    border-color: $accent-color;
+  }
 
-.form__field input:focus ~ .form__icon {
-  fill: #2196f3;
+  &:focus ~ .form__icon {
+    fill: $accent-color;
+  }
 }
 
 .form__field label {
@@ -158,9 +156,8 @@ textarea {
 }
 
 .form__label {
-  display: flex;
-  align-items: center;
   margin-bottom: 30px;
+  @extend %flex-align;
 }
 
 .form__checkbox {
@@ -174,6 +171,16 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:checked + .form__element {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    border-radius: 2px;
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    background-color: transparent;
+  }
 }
 
 .form__element {
@@ -186,16 +193,6 @@ textarea {
   border-radius: 2px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
-
-.form__checkbox:checked + .form__element {
-  background-color: $accent-color;
-  border-color: $accent-color;
-  border-radius: 2px;
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  background-color: transparent;
 }
 
 .form__text {

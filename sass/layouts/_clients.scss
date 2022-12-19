@@ -30,11 +30,10 @@
 }
 
 .clients__link {
-  display: flex;
+  @include flex-align-justify;
   width: 170px;
   height: 92px;
-  align-items: center;
-  justify-content: center;
+
   color: #afb1b8;
   background-color: $text-white;
   border: 1px solid #afb1b8;
