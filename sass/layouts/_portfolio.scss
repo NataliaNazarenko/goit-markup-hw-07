@@ -18,11 +18,8 @@
 
 .our-projects__button {
   padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
+  @include font(16, 500, 26, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
   border: none;
@@ -78,9 +75,7 @@
 
 .our-projects__info {
   content: '';
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
+  @include font(18, null, 28, 0.03);
   color: $text-white;
   position: absolute;
   width: 100%;
@@ -105,9 +100,7 @@
 .our-projects__title {
   margin: 0 0 4px 0;
   color: $primari-text-color;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
+  @include font(18, null, 36, 0.06);
 }
 
 .our-projects__description {
@@ -121,7 +114,5 @@
 .our-projects__text {
   margin: 0;
   color: $title-text-color;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
+  @include font(16, null, 30, 0.03);
 }

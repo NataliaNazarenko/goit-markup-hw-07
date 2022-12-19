@@ -8,12 +8,9 @@
   margin-top: 0;
   margin-bottom: 50px;
   min-width: 366px;
-
   color: $primari-text-color;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  @include font(36, null, 42, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .gallery {
@@ -39,10 +36,8 @@
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0;
   position: absolute;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  @include font(14, null, 16, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $text-white;
 }

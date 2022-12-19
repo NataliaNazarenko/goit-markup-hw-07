@@ -75,9 +75,7 @@ textarea {
   margin-bottom: 10px;
 
   & textarea::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
+    @include font(12, null, 14, 0.01);
     color: rgba(117, 117, 117, 0.5);
   }
 
@@ -94,10 +92,8 @@ textarea {
 }
 
 .form__title {
-  font-size: 20px;
-  line-height: calc(23 / 20);
+  @include font(20, null, 23, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primari-text-color);
   margin: 0 0 12px;
 }
@@ -129,9 +125,7 @@ textarea {
 }
 
 .form__field label {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font(12, null, 14, 0.01);
   color: $title-text-color;
   margin-bottom: 4px;
 }
@@ -148,9 +142,7 @@ textarea {
 }
 
 .form__textarea label {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font(12, null, 14, 0.01);
   color: $title-text-color;
   margin-bottom: 4px;
 }
@@ -196,18 +188,14 @@ textarea {
 }
 
 .form__text {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(14, null, 24, 0.03);
   color: $title-text-color;
   margin-right: 3px;
   padding: 0;
 }
 
 .form__link {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(14, null, 24, 0.03);
   color: $accent-color;
   padding: 0;
 }

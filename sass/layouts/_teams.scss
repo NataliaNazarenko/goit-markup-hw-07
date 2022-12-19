@@ -9,12 +9,9 @@
   margin-bottom: 50px;
   min-width: 264px;
   padding-top: 94px;
-
   color: $primari-text-color;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  @include font(36, null, 42, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-members {
@@ -44,21 +41,14 @@
 
 .team-members__name {
   margin: 0 0 10px 0;
-
   color: $primari-text-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
+  @include font(16, 500, 19, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-members__info {
   margin: 0;
-
   color: $title-text-color;
-  font-size: 16px;
-  line-height: calc(19 / 16);
+  @include font(16, null, 19, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
 }

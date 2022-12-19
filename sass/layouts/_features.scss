@@ -28,7 +28,6 @@
 
 .features__item {
   width: 270px;
-  align-items: flex-start;
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -38,20 +37,14 @@
 .features__title {
   margin-top: 0;
   margin-bottom: 10px;
-
   color: $primari-text-color;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  @include font(14, null, 16, 0.03);
   text-transform: uppercase;
 }
 
 .features__text {
   margin-top: 0;
   margin-bottom: 0;
-
   color: $title-text-color;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(14, null, 24, 0.03);
 }
